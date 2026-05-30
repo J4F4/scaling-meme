@@ -190,7 +190,7 @@ export default function PropertyDetailPage({ params }: Props) {
 
               <div className="space-y-3">
                 <a
-                  href={`https://wa.me/966500000000?text=أود الاستفسار عن عقار: ${encodeURIComponent(property.title)}`}
+                  href={`https://wa.me/966573888610?text=أود الاستفسار عن عقار: ${encodeURIComponent(property.title)}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2 w-full bg-green-500 hover:bg-green-600 text-white font-bold py-3.5 rounded-xl transition-all text-sm"
@@ -199,11 +199,11 @@ export default function PropertyDetailPage({ params }: Props) {
                   تواصل واتساب
                 </a>
                 <a
-                  href="tel:+966500000000"
+                  href="tel:+966573888610"
                   className="flex items-center justify-center gap-2 w-full bg-white/10 hover:bg-white/20 text-white font-bold py-3.5 rounded-xl transition-all text-sm border border-white/20"
                 >
                   <Phone size={18} />
-                  اتصل: 0500000000
+                  اتصل: 0573888610
                 </a>
               </div>
 

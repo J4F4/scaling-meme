@@ -105,7 +105,7 @@ export default function MapComponent({ properties, height = '600px', showFilters
                   </p>
                 </div>
                 <div style="display: flex; gap: 6px;">
-                  <a href="https://wa.me/966500000000?text=أود الاستفسار عن ${encodeURIComponent(property.title)}"
+                  <a href="https://wa.me/966573888610?text=أود الاستفسار عن ${encodeURIComponent(property.title)}"
                     target="_blank"
                     style="background: #25D366; color: white; padding: 6px 10px; border-radius: 8px; font-size: 11px; font-weight: 700; text-decoration: none; display: flex; align-items: center; gap: 4px;">
                     واتساب

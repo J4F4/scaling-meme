@@ -16,10 +16,10 @@ module.exports = {
           400: '#5878b5',
           500: '#3a60a8',
           600: '#2d5299',
-          700: '#1e3a5f',
-          800: '#1a2f4d',
-          900: '#0A1628',
-          950: '#060d1a',
+          700: '#173B73',
+          800: '#112d58',
+          900: '#0d2244',
+          950: '#081529',
         },
         gold: {
           300: '#e8c97a',
@@ -63,7 +63,7 @@ module.exports = {
         },
       },
       backgroundImage: {
-        'gradient-navy': 'linear-gradient(135deg, #0A1628 0%, #1e3a5f 50%, #1a2744 100%)',
+        'gradient-navy': 'linear-gradient(135deg, #0d2244 0%, #173B73 50%, #112d58 100%)',
         'gradient-gold': 'linear-gradient(135deg, #c9a96e 0%, #b8913a 100%)',
         'gradient-overlay': 'linear-gradient(to bottom, rgba(10,22,40,0.3) 0%, rgba(10,22,40,0.8) 100%)',
       },

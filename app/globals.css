@@ -5,9 +5,9 @@
 @tailwind utilities;
 
 :root {
-  --navy-900: #0A1628;
-  --navy-800: #1a2f4d;
-  --navy-700: #1e3a5f;
+  --navy-900: #0d2244;
+  --navy-800: #112d58;
+  --navy-700: #173B73;
   --gold-500: #c9a96e;
   --gold-400: #d4a843;
 }

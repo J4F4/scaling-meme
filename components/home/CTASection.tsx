@@ -34,7 +34,7 @@ export default function CTASection() {
             <ArrowLeft size={18} />
           </Link>
           <a
-            href="https://wa.me/966500000000?text=مرحباً، أود الاستفسار عن عقار"
+            href="https://wa.me/966573888610?text=مرحباً، أود الاستفسار عن عقار"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 glass border border-white/20 hover:border-green-400/50 text-white hover:text-green-400 font-bold px-8 py-4 rounded-xl transition-all duration-200 text-base"
@@ -43,7 +43,7 @@ export default function CTASection() {
             تواصل واتساب
           </a>
           <a
-            href="tel:+966500000000"
+            href="tel:+966573888610"
             className="inline-flex items-center justify-center gap-2 glass border border-white/20 hover:border-gold-400/50 text-white hover:text-gold-400 font-bold px-8 py-4 rounded-xl transition-all duration-200 text-base"
           >
             <Phone size={18} />

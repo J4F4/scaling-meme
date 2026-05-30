@@ -45,8 +45,11 @@ export default function ContactPage() {
                 <div className="space-y-5">
                   {[
                     { icon: MapPin, label: 'عنواننا', text: 'الرياض، حي العليا\nطريق الملك فهد' },
-                    { icon: Phone, label: 'هاتف', text: '+966 50 000 0000\n+966 11 234 5678' },
-                    { icon: Mail, label: 'البريد', text: 'info@example.com\nsales@example.com' },
+                    { icon: Phone, label: 'للإيجار', text: '0573 888 610' },
+                    { icon: Phone, label: 'للبيع', text: '0573 888 605' },
+                    { icon: Phone, label: 'مبيعات', text: '0573 888 604' },
+                    { icon: Phone, label: 'خدمة العملاء', text: '0573 888 601' },
+                    { icon: Mail, label: 'البريد', text: 'info@example.com' },
                     { icon: Clock, label: 'أوقات العمل', text: 'السبت – الخميس: 9ص – 9م\nالجمعة: 4م – 9م' },
                   ].map(({ icon: Icon, label, text }) => (
                     <div key={label} className="flex gap-4">
@@ -67,10 +70,10 @@ export default function ContactPage() {
                 <h3 className="font-bold text-base mb-4">تابعنا على</h3>
                 <div className="grid grid-cols-2 gap-3">
                   {[
-                    { name: 'واتساب', handle: '0500000000', href: 'https://wa.me/966500000000', color: '#25D366' },
-                    { name: 'تويتر / X', handle: '@alhabishi', href: '#', color: '#1DA1F2' },
-                    { name: 'إنستغرام', handle: '@alhabishi', href: '#', color: '#E1306C' },
-                    { name: 'يوتيوب', handle: 'قناتنا', href: '#', color: '#FF0000' },
+                    { name: 'قناة واتساب', handle: 'انضم الآن', href: 'https://whatsapp.com/channel/0029VaPvG7pBfxo3NHfsoD0z', color: '#25D366' },
+                    { name: 'روابطنا', handle: 'Linktree', href: 'https://linktr.ee/AlhubishiRE', color: '#39E09B' },
+                    { name: 'تويتر / X', handle: '@AlhubishiRE', href: 'https://twitter.com/AlhubishiRE', color: '#1DA1F2' },
+                    { name: 'إنستغرام', handle: '@AlhubishiRE', href: 'https://instagram.com/AlhubishiRE', color: '#E1306C' },
                   ].map(({ name, handle, href, color }) => (
                     <a key={name} href={href} target="_blank" rel="noopener noreferrer"
                       className="bg-white/10 hover:bg-white/20 rounded-xl p-3 transition-colors">

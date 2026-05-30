@@ -165,7 +165,7 @@ export default function ProjectsPage() {
               تواصل معنا
             </Link>
             <a
-              href="https://wa.me/966500000000?text=أود الاستفسار عن مشاريعكم العقارية"
+              href="https://wa.me/966573888610?text=أود الاستفسار عن مشاريعكم العقارية"
               target="_blank"
               rel="noopener noreferrer"
               className="glass border border-white/20 text-white font-bold px-8 py-4 rounded-xl transition-all hover:border-green-400"

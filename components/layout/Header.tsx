@@ -1,8 +1,9 @@
 'use client';
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
-import { Menu, X, Phone, ChevronDown } from 'lucide-react';
+import { Menu, X, Phone } from 'lucide-react';
 
 const navLinks = [
   { href: '/', label: 'الرئيسية' },
@@ -37,12 +38,18 @@ export default function Header() {
 
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="w-11 h-11 rounded-xl bg-gradient-gold flex items-center justify-center shadow-gold">
-              <span className="text-white font-black text-lg leading-none">م</span>
+            <div className="relative w-14 h-14 shrink-0">
+              <Image
+                src="/logo.jpg"
+                alt="محمد الحبيشي العقارية"
+                fill
+                className="object-contain filter brightness-0 invert drop-shadow-md"
+                priority
+              />
             </div>
             <div className="hidden sm:block">
-              <p className="text-white font-bold text-base leading-tight tracking-wide">محمد الحبيشي</p>
-              <p className="text-gold-500 text-xs font-medium tracking-widest">العقارية</p>
+              <p className="text-white font-bold text-sm leading-tight tracking-wide">محمد الحبيشي</p>
+              <p className="text-gold-400 text-xs font-medium tracking-widest">العقارية</p>
             </div>
           </Link>
 
@@ -52,9 +59,9 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 whitespace-nowrap
+                className={`px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 whitespace-nowrap
                   ${pathname === link.href
-                    ? 'text-gold-500 bg-white/10'
+                    ? 'text-gold-400 bg-white/10'
                     : 'text-white/85 hover:text-white hover:bg-white/10'
                   }`}
               >
@@ -66,7 +73,7 @@ export default function Header() {
           {/* CTA + Mobile Toggle */}
           <div className="flex items-center gap-3">
             <a
-              href="tel:+966500000000"
+              href="tel:+966573888610"
               className="hidden md:flex items-center gap-2 bg-gold-500 hover:bg-gold-600 text-white px-4 py-2.5 rounded-xl text-sm font-bold transition-all duration-200 shadow-gold hover:shadow-lg"
             >
               <Phone size={15} />
@@ -94,20 +101,29 @@ export default function Header() {
                 onClick={() => setIsMobileOpen(false)}
                 className={`px-4 py-3 rounded-xl text-sm font-medium transition-colors
                   ${pathname === link.href
-                    ? 'text-gold-500 bg-white/10'
+                    ? 'text-gold-400 bg-white/10'
                     : 'text-white/85 hover:text-white hover:bg-white/10'
                   }`}
               >
                 {link.label}
               </Link>
             ))}
-            <a
-              href="tel:+966500000000"
-              className="mt-2 flex items-center justify-center gap-2 bg-gold-500 text-white px-4 py-3 rounded-xl text-sm font-bold"
-            >
-              <Phone size={16} />
-              اتصل الآن: 0500000000
-            </a>
+            <div className="mt-2 grid grid-cols-2 gap-2">
+              <a
+                href="tel:+966573888610"
+                className="flex items-center justify-center gap-2 bg-gold-500 text-white px-3 py-3 rounded-xl text-xs font-bold"
+              >
+                <Phone size={14} />
+                للإيجار
+              </a>
+              <a
+                href="tel:+966573888605"
+                className="flex items-center justify-center gap-2 bg-navy-700 border border-white/20 text-white px-3 py-3 rounded-xl text-xs font-bold"
+              >
+                <Phone size={14} />
+                للبيع
+              </a>
+            </div>
           </nav>
         </div>
       </div>

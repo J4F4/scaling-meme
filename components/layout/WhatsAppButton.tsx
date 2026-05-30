@@ -1,14 +1,12 @@
 'use client';
 import { useState } from 'react';
-import { MessageCircle, X } from 'lucide-react';
 
 export default function WhatsAppButton() {
   const [showTooltip, setShowTooltip] = useState(false);
-
-  const whatsappUrl = 'https://wa.me/966500000000?text=مرحباً، أود الاستفسار عن العقارات المتاحة';
+  const whatsappUrl = 'https://wa.me/966573888610?text=مرحباً، أود الاستفسار عن العقارات المتاحة';
 
   return (
-    <div className="fixed bottom-6 left-6 z-50 no-print flex flex-col items-center gap-2">
+    <div className="fixed bottom-6 left-6 z-50 no-print flex flex-col items-end gap-2">
       {showTooltip && (
         <div className="bg-white text-navy-900 text-sm font-bold px-4 py-2 rounded-xl shadow-luxury whitespace-nowrap animate-fade-in-up">
           تواصل معنا عبر واتساب

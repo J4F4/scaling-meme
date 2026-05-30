@@ -38,12 +38,12 @@ export default function Header() {
 
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="relative w-14 h-14 shrink-0">
+            <div className="relative w-12 h-12 shrink-0 rounded-xl overflow-hidden bg-white shadow-md ring-2 ring-gold-500/40">
               <Image
                 src="/logo.jpg"
                 alt="محمد الحبيشي العقارية"
                 fill
-                className="object-contain filter brightness-0 invert drop-shadow-md"
+                className="object-contain p-1"
                 priority
               />
             </div>

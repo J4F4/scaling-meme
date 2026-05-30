@@ -19,12 +19,12 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-5">
-              <div className="relative w-16 h-16 shrink-0">
+              <div className="relative w-14 h-14 shrink-0 rounded-xl overflow-hidden bg-white ring-2 ring-gold-500/30">
                 <Image
                   src="/logo.jpg"
                   alt="محمد الحبيشي العقارية"
                   fill
-                  className="object-contain filter brightness-0 invert"
+                  className="object-contain p-1"
                 />
               </div>
               <div>

@@ -1,9 +1,16 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Phone, MessageCircle, ArrowLeft } from 'lucide-react';
 
 export default function CTASection() {
   return (
     <section className="py-20 bg-gradient-navy relative overflow-hidden">
+      {/* Logo watermark */}
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+        <div className="relative w-[500px] h-[500px] opacity-[0.05]">
+          <Image src="/logo.jpg" alt="" fill className="object-contain filter brightness-0 invert" />
+        </div>
+      </div>
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-10 right-10 w-72 h-72 rounded-full bg-gold-500 blur-3xl"></div>
         <div className="absolute bottom-10 left-10 w-96 h-96 rounded-full bg-blue-500 blur-3xl"></div>
@@ -34,7 +41,7 @@ export default function CTASection() {
             <ArrowLeft size={18} />
           </Link>
           <a
-            href="https://wa.me/966573888610?text=مرحباً، أود الاستفسار عن عقار"
+            href="https://wa.me/966573888610?text=مرحباً، أود الاستفسار عن العقارات"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 glass border border-white/20 hover:border-green-400/50 text-white hover:text-green-400 font-bold px-8 py-4 rounded-xl transition-all duration-200 text-base"

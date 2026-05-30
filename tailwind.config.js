@@ -8,18 +8,19 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        // الألوان الرسمية لمحمد الحبيشي العقارية
         navy: {
-          50:  '#e8edf5',
-          100: '#c5d0e6',
-          200: '#9eb0d4',
-          300: '#7690c2',
-          400: '#5878b5',
-          500: '#3a60a8',
-          600: '#2d5299',
-          700: '#173B73',
+          50:  '#eef2fa',
+          100: '#d5def2',
+          200: '#aabde6',
+          300: '#7f9cd9',
+          400: '#547bcc',
+          500: '#2d5ab8',
+          600: '#1f4a9e',
+          700: '#173B73',  // اللون الأساسي الرسمي #173B73
           800: '#112d58',
-          900: '#0d2244',
-          950: '#081529',
+          900: '#0a1f3d',
+          950: '#060f1e',
         },
         gold: {
           300: '#e8c97a',
@@ -27,6 +28,12 @@ module.exports = {
           500: '#c9a96e',
           600: '#b8913a',
           700: '#9a7a2e',
+        },
+        silver: {
+          100: '#f0f1f3',
+          200: '#d8dae0',
+          300: '#B8BDC7',  // الفضي الرسمي
+          400: '#9ca3af',
         },
         cream: {
           50:  '#fefefe',
@@ -63,15 +70,16 @@ module.exports = {
         },
       },
       backgroundImage: {
-        'gradient-navy': 'linear-gradient(135deg, #0d2244 0%, #173B73 50%, #112d58 100%)',
+        // التدرج الرئيسي باللون الأساسي #173B73
+        'gradient-navy': 'linear-gradient(135deg, #0a1f3d 0%, #173B73 60%, #1f4a9e 100%)',
         'gradient-gold': 'linear-gradient(135deg, #c9a96e 0%, #b8913a 100%)',
-        'gradient-overlay': 'linear-gradient(to bottom, rgba(10,22,40,0.3) 0%, rgba(10,22,40,0.8) 100%)',
+        'gradient-overlay': 'linear-gradient(to bottom, rgba(23,59,115,0.2) 0%, rgba(23,59,115,0.85) 100%)',
       },
       boxShadow: {
-        'luxury': '0 20px 60px -10px rgba(10, 22, 40, 0.3)',
-        'card': '0 4px 30px rgba(10, 22, 40, 0.08)',
-        'card-hover': '0 20px 60px rgba(10, 22, 40, 0.15)',
-        'gold': '0 4px 20px rgba(201, 169, 110, 0.4)',
+        'luxury': '0 20px 60px -10px rgba(23, 59, 115, 0.4)',
+        'card': '0 4px 30px rgba(23, 59, 115, 0.08)',
+        'card-hover': '0 20px 60px rgba(23, 59, 115, 0.18)',
+        'gold': '0 4px 20px rgba(201, 169, 110, 0.5)',
       },
     },
   },

@@ -28,7 +28,7 @@ export default function Header() {
   }, []);
 
   const headerBg = isScrolled || !isHome
-    ? 'bg-navy-900/98 backdrop-blur-md shadow-luxury'
+    ? 'bg-navy-700/98 backdrop-blur-md shadow-luxury'
     : 'bg-transparent';
 
   return (
@@ -92,7 +92,7 @@ export default function Header() {
 
       {/* Mobile Menu */}
       <div className={`lg:hidden transition-all duration-300 overflow-hidden ${isMobileOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'}`}>
-        <div className="bg-navy-900/98 backdrop-blur-md border-t border-white/10 px-4 py-4">
+        <div className="bg-navy-700/98 backdrop-blur-md border-t border-white/10 px-4 py-4">
           <nav className="flex flex-col gap-1">
             {navLinks.map((link) => (
               <Link

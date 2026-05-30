@@ -86,7 +86,7 @@ export default function ProjectsPage() {
                       </span>
                     </div>
                     <div className="absolute bottom-4 right-4">
-                      <span className="bg-navy-900/80 text-gold-400 text-xs font-bold px-3 py-1.5 rounded-full backdrop-blur-sm">
+                      <span className="bg-navy-700/80 text-gold-400 text-xs font-bold px-3 py-1.5 rounded-full backdrop-blur-sm">
                         {typeLabels[project.type] || project.type}
                       </span>
                     </div>
@@ -140,7 +140,7 @@ export default function ProjectsPage() {
                       </div>
                       <Link
                         href="/contact"
-                        className="bg-navy-900 hover:bg-gold-500 text-white text-sm font-bold px-5 py-2.5 rounded-xl transition-all"
+                        className="bg-navy-700 hover:bg-gold-500 text-white text-sm font-bold px-5 py-2.5 rounded-xl transition-all"
                       >
                         طلب معلومات
                       </Link>
@@ -154,7 +154,7 @@ export default function ProjectsPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-navy-900">
+      <section className="py-16 bg-navy-700">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
           <h2 className="text-3xl font-black text-white mb-4">
             مهتم بالاستثمار في مشاريعنا؟

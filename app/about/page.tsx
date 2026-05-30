@@ -127,7 +127,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-14">
             {values.map(({ icon: Icon, title, text }) => (
               <div key={title} className="bg-white rounded-2xl p-8 shadow-card text-center hover:shadow-card-hover transition-all">
-                <div className="w-16 h-16 bg-navy-900 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <div className="w-16 h-16 bg-navy-700 rounded-2xl flex items-center justify-center mx-auto mb-6">
                   <Icon size={28} className="text-gold-400" />
                 </div>
                 <h3 className="font-black text-navy-900 text-xl mb-4">{title}</h3>
@@ -158,7 +158,7 @@ export default function AboutPage() {
       </section>
 
       {/* Why Us */}
-      <section className="py-20 bg-navy-900 relative overflow-hidden">
+      <section className="py-20 bg-navy-700 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
           <SectionTitle badge="لماذا نحن" title="لماذا تختار" highlight="الحبيشي" subtitle="ما يجعلنا الخيار الأول لعملائنا" center light />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-14">

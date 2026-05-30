@@ -106,7 +106,7 @@ export default function ServicesPage() {
                   </div>
                   <Link
                     href="/contact"
-                    className="inline-flex items-center gap-2 mt-8 bg-navy-900 hover:bg-gold-500 text-white font-bold px-6 py-3 rounded-xl transition-all text-sm"
+                    className="inline-flex items-center gap-2 mt-8 bg-navy-700 hover:bg-gold-500 text-white font-bold px-6 py-3 rounded-xl transition-all text-sm"
                   >
                     طلب الخدمة
                   </Link>
@@ -133,7 +133,7 @@ export default function ServicesPage() {
               { step: '04', title: 'إتمام الصفقة', text: 'نرافقك خلال كل خطوة حتى إتمام الصفقة بنجاح' },
             ].map(({ step, title, text }) => (
               <div key={step} className="text-center relative">
-                <div className="w-16 h-16 bg-navy-900 rounded-2xl flex items-center justify-center mx-auto mb-5 relative z-10">
+                <div className="w-16 h-16 bg-navy-700 rounded-2xl flex items-center justify-center mx-auto mb-5 relative z-10">
                   <span className="text-gold-400 font-black text-lg">{step}</span>
                 </div>
                 <h3 className="font-black text-navy-900 text-base mb-3">{title}</h3>

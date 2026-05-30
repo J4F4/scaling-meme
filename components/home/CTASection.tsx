@@ -7,7 +7,7 @@ export default function CTASection() {
     <section className="py-20 bg-gradient-navy relative overflow-hidden">
       {/* Logo watermark */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-        <div className="relative w-[500px] h-[500px] opacity-[0.05]">
+        <div className="relative w-[85vw] max-w-[780px] aspect-square opacity-[0.10]">
           <Image src="/logo.jpg" alt="" fill className="object-contain filter brightness-0 invert" />
         </div>
       </div>

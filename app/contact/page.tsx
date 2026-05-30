@@ -1,5 +1,6 @@
 'use client';
 import { useState } from 'react';
+import Image from 'next/image';
 import { MapPin, Phone, Mail, Clock, Send, CheckCircle2 } from 'lucide-react';
 import SectionTitle from '@/components/ui/SectionTitle';
 import type { Metadata } from 'next';
@@ -22,8 +23,14 @@ export default function ContactPage() {
   return (
     <div className="pt-20">
       {/* Hero */}
-      <section className="py-20 bg-gradient-navy">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 text-center">
+      <section className="py-20 bg-gradient-navy relative overflow-hidden">
+        {/* Logo watermark */}
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-[1]">
+          <div className="relative w-[85vw] max-w-[700px] aspect-square opacity-[0.10]">
+            <Image src="/logo.jpg" alt="" fill className="object-contain filter brightness-0 invert" />
+          </div>
+        </div>
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 text-center">
           <span className="inline-flex items-center gap-2 bg-gold-500/20 text-gold-400 border border-gold-500/30 px-4 py-1.5 rounded-full text-sm font-bold mb-6">
             نحن هنا لمساعدتك
           </span>

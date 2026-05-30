@@ -69,6 +69,12 @@ export default function ServicesPage() {
           <div className="absolute top-0 right-0 w-96 h-96 rounded-full bg-gold-500 blur-3xl"></div>
           <div className="absolute bottom-0 left-0 w-72 h-72 rounded-full bg-blue-500 blur-3xl"></div>
         </div>
+        {/* Logo watermark */}
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-[1]">
+          <div className="relative w-[85vw] max-w-[700px] aspect-square opacity-[0.10]">
+            <Image src="/logo.jpg" alt="" fill className="object-contain filter brightness-0 invert" />
+          </div>
+        </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 text-center">
           <span className="inline-flex items-center gap-2 bg-gold-500/20 text-gold-400 border border-gold-500/30 px-4 py-1.5 rounded-full text-sm font-bold mb-6">
             ما نقدمه لك

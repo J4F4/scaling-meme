@@ -38,7 +38,7 @@ export default function HeroSection() {
 
       {/* ===== LOGO WATERMARK ===== */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-[1]">
-        <div className="relative w-[70vw] max-w-[600px] aspect-square opacity-[0.06]">
+        <div className="relative w-[92vw] max-w-[900px] aspect-square opacity-[0.11]">
           <Image
             src="/logo.jpg"
             alt=""

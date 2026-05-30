@@ -37,19 +37,15 @@ export default function Header() {
         <div className="flex items-center justify-between h-20">
 
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 group">
-            <div className="relative w-12 h-12 shrink-0 rounded-xl overflow-hidden bg-white shadow-md ring-2 ring-gold-500/40">
+          <Link href="/" className="flex items-center group">
+            <div className="relative h-16 w-40 sm:h-[72px] sm:w-48 shrink-0" style={{mixBlendMode:'screen', filter:'invert(1)'}}>
               <Image
                 src="/logo.jpg"
                 alt="محمد الحبيشي العقارية"
                 fill
-                className="object-contain p-1"
+                className="object-contain object-right"
                 priority
               />
-            </div>
-            <div className="hidden sm:block">
-              <p className="text-white font-bold text-sm leading-tight tracking-wide">محمد الحبيشي</p>
-              <p className="text-gold-400 text-xs font-medium tracking-widest">العقارية</p>
             </div>
           </Link>
 

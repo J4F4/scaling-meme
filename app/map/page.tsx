@@ -56,13 +56,9 @@ export default function MapPage() {
       {/* ===== HEADER ===== */}
       <header className="shrink-0 h-16 flex items-center justify-between px-4 sm:px-6 z-30 border-b border-white/10" style={{background:'#0d1b2e'}}>
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2.5">
-          <div className="relative w-10 h-10 shrink-0 rounded-xl overflow-hidden bg-white ring-1 ring-gold-500/40">
-            <Image src="/logo.jpg" alt="محمد الحبيشي العقارية" fill className="object-contain p-0.5" />
-          </div>
-          <div className="hidden sm:block">
-            <p className="text-white font-bold text-xs leading-tight">محمد الحبيشي</p>
-            <p className="text-gold-400 text-[10px] font-medium tracking-widest">العقارية</p>
+        <Link href="/" className="flex items-center">
+          <div className="relative h-12 w-32 shrink-0" style={{mixBlendMode:'screen', filter:'invert(1)'}}>
+            <Image src="/logo.jpg" alt="محمد الحبيشي العقارية" fill className="object-contain object-right" />
           </div>
         </Link>
 

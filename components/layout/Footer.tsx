@@ -19,17 +19,13 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-5">
-              <div className="relative w-14 h-14 shrink-0 rounded-xl overflow-hidden bg-white ring-2 ring-gold-500/30">
+              <div className="relative h-16 w-44 shrink-0" style={{mixBlendMode:'screen', filter:'invert(1)'}}>
                 <Image
                   src="/logo.jpg"
                   alt="محمد الحبيشي العقارية"
                   fill
-                  className="object-contain p-1"
+                  className="object-contain object-right"
                 />
-              </div>
-              <div>
-                <p className="font-bold text-base leading-tight">محمد الحبيشي</p>
-                <p className="text-gold-400 text-sm font-medium">العقارية</p>
               </div>
             </div>
             <p className="text-white/60 text-sm leading-7 mb-5">

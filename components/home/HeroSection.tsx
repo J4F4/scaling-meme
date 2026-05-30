@@ -57,6 +57,13 @@ export default function HeroSection() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 pt-28 pb-16 w-full">
         <div className="max-w-3xl">
 
+          {/* Official Logo — prominent at top */}
+          <div className="mb-6 animate-fade-in-up">
+            <div className="relative h-20 sm:h-24 w-56 sm:w-72" style={{mixBlendMode:'screen', filter:'invert(1)'}}>
+              <Image src="/logo.jpg" alt="محمد الحبيشي العقارية" fill className="object-contain object-right" priority={false} />
+            </div>
+          </div>
+
           {/* Badge */}
           <div className="inline-flex items-center gap-2 glass px-4 py-2 rounded-full text-white/90 text-sm font-medium mb-6 animate-fade-in-up">
             <span className="w-2 h-2 rounded-full bg-gold-400 animate-pulse-slow"></span>

@@ -53,16 +53,30 @@ export default function HeroSection() {
       <div className="absolute top-1/4 left-10 w-80 h-80 rounded-full blur-3xl pointer-events-none" style={{background:'rgba(201,169,110,0.08)'}}></div>
       <div className="absolute bottom-1/4 right-10 w-96 h-96 rounded-full blur-3xl pointer-events-none" style={{background:'rgba(23,59,115,0.3)'}}></div>
 
-      {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 pt-28 pb-16 w-full">
-        <div className="max-w-3xl">
+      {/* ===== LOGO SECTION — centered, large, official ===== */}
+      <div className="relative z-10 w-full flex flex-col items-center justify-center pt-28 pb-8">
+        {/* Gold decorative line */}
+        <div className="w-16 h-px bg-gold-500/60 mb-6"></div>
+        {/* Logo */}
+        <div
+          className="relative w-52 h-52 sm:w-64 sm:h-64 md:w-72 md:h-72"
+          style={{filter:'invert(1)', mixBlendMode:'screen'}}
+        >
+          <Image
+            src="/logo.jpg"
+            alt="محمد الحبيشي العقارية"
+            fill
+            className="object-contain"
+            priority
+          />
+        </div>
+        {/* Gold decorative line */}
+        <div className="w-16 h-px bg-gold-500/60 mt-6"></div>
+      </div>
 
-          {/* Official Logo — prominent at top */}
-          <div className="mb-6 animate-fade-in-up">
-            <div className="relative h-20 sm:h-24 w-56 sm:w-72" style={{mixBlendMode:'screen', filter:'invert(1)'}}>
-              <Image src="/logo.jpg" alt="محمد الحبيشي العقارية" fill className="object-contain object-right" priority={false} />
-            </div>
-          </div>
+      {/* Content */}
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 pb-16 w-full">
+        <div className="max-w-3xl">
 
           {/* Badge */}
           <div className="inline-flex items-center gap-2 glass px-4 py-2 rounded-full text-white/90 text-sm font-medium mb-6 animate-fade-in-up">

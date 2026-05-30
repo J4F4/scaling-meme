@@ -36,14 +36,16 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-20">
 
-          {/* Logo */}
-          <Link href="/" className="flex items-center gap-2.5 group">
-            <div className="relative h-11 w-11 shrink-0" style={{filter:'invert(1)', mixBlendMode:'screen'}}>
-              <Image src="/logo.jpg" alt="محمد الحبيشي العقارية" fill className="object-contain" priority />
-            </div>
-            <div>
-              <p className="text-white font-black text-sm leading-tight">محمد الحبيشي</p>
-              <p className="text-gold-400 text-[11px] font-medium tracking-widest">العقارية</p>
+          {/* Logo — white pill badge */}
+          <Link href="/" className="flex items-center group">
+            <div className="bg-white rounded-2xl px-3 py-1.5 shadow-md flex items-center gap-2">
+              <div className="relative h-10 w-10 shrink-0">
+                <Image src="/logo.jpg" alt="محمد الحبيشي العقارية" fill className="object-contain" priority />
+              </div>
+              <div className="hidden sm:block">
+                <p className="text-navy-700 font-black text-xs leading-tight">محمد الحبيشي</p>
+                <p className="text-[10px] font-medium" style={{color:'#c9a96e'}}>العقارية</p>
+              </div>
             </div>
           </Link>
 
